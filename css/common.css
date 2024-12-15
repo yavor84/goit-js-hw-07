@@ -153,6 +153,91 @@ h1 {
 }
 
 .login-form button:hover,
-.login-form button:focus {
+.login-form button:focus,
+.change-color:hover,
+.change-color:focus,
+#controls button:hover,
+#controls button:focus {
   background-color: #6c8cff;
+}
+
+.widget {
+  text-align: center;
+  border-radius: 8px;
+  padding: 100px 0;
+  max-width: 345px;
+  max-height: 280px;
+  background-color: #fff;
+}
+
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #4e75ff;
+}
+
+#controls {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 486px;
+  margin-bottom: 16px;
+  background-color: #f6f6fe;
+  padding: 32px;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#controls button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#controls button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus {
+  background-color: #ff7070;
 }
